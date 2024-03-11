@@ -35,6 +35,8 @@ For example, if a teacher `teacherken@gmail.com` does not exist in the database,
 
 ## Local Test
 
+Note that when switching between local and postman test, it would be good to run `docker-compose down` to clear the database. Then run `docker-compose up -d` to start the database again. This is to ensure that the database is clean and ready for testing.
+
 1. Run `go test ./...` to run all tests.
 2. Run `go test -v` to run all tests with verbose output. (Note: there might be some error logs output which is intended)
 
